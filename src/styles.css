@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+.icons {
+    width: 20px;
+}
+
+a {
+    color: #212529 !important;
+}
+
+iframe {
+    border: 1px solid black;
+    width: 100%;
+    /* takes precedence over the width set with the HTML width attribute */
+}
+
+@media (max-width: 575px) {
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.fotos {
+    width: 700px !important;
+    height: 434px;
+}
+
+@media (max-width: 575px) {
+    .fotos {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+.fotos2 {
+    width: 700px !important;
+    height: 420px;
+}
+
+@media (max-width: 575px) {
+    .fotos2 {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 10% !important;
+}
+
+
