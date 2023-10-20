@@ -5549,7 +5549,7 @@ button.bg-light-gray:focus {
 
 .pr-3,
 .px-3 {
-  padding-right: 1rem !important; }
+  padding-right: 1rem ; }
 
 .pb-3,
 .py-3 {
@@ -5557,7 +5557,7 @@ button.bg-light-gray:focus {
 
 .pl-3,
 .px-3 {
-  padding-left: 1rem !important; }
+  padding-left: 1rem; }
 
 .p-4 {
   padding: 1.5rem !important; }
