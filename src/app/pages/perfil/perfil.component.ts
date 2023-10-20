@@ -29,14 +29,6 @@ this._router.params.subscribe(params => {
   this.getFotos(params['id']);
   this.getPlataformas(params['id']);
   this.getVideos(params['id']);
-
-  $('.pause').click(() => {
-    $('#media').carousel({
-      pause: true,
-      interval: false,
-    });
-  });
-
 });
 }
 
