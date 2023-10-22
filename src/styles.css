@@ -60,6 +60,9 @@ iframe {
     .padding-left{
         padding-left: 20px !important;
     }
+    .margin-tk-bottom{
+        margin-bottom: 0;
+    }
 }
 
 .carousel-control-prev,
@@ -70,4 +73,11 @@ iframe {
 
 .logo-footer {
     width: 25px;
+}
+
+.disp-n{
+    display: none!important;
+}
+.text-tk-white {
+    color: white !important;
 }

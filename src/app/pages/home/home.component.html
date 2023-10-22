@@ -23,33 +23,32 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="input-group mb-4">
-                                     <input type="text" class="form-control data" placeholder="Ingresa tu busqueda">
+                                    <input type="text" class="form-control data" placeholder="Ingresa tu busqueda">
                                     <div class="input-group-append">
-                                       <button class="btn btn-primary search" type="button">Buscar</button>
+                                        <button class="btn btn-primary search" type="button">Buscar</button>
                                     </div>
-                                 </div>
+                                </div>
                             </div>
                             <div class="col-lg-12">
-<span>Sugerencias: </span><button type="button" class="btn btn-primary rounded-pill mt-2">Mariachi</button>
-<button type="button" class="btn btn-primary rounded-pill mt-2">Banda</button>
-<button type="button" class="btn btn-primary rounded-pill mt-2">Imitador</button>
-<button type="button" class="btn btn-primary rounded-pill mt-2">Payaso</button>
-<button type="button" class="btn btn-primary rounded-pill mt-2">Versatil</button>
-<button type="button" class="btn btn-primary rounded-pill mt-2">Comida</button>
-<button type="button" class="btn btn-primary rounded-pill mt-2">Globos</button>
-<button type="button" class="btn btn-primary rounded-pill mt-2">Infables</button>
-<button type="button" class="btn btn-primary rounded-pill mt-2">Norteño</button>
-<button type="button" class="btn btn-primary rounded-pill mt-2">Mariachi</button>
-<button type="button" class="btn btn-primary rounded-pill mt-2">Taquiza</button>
-<button type="button" class="btn btn-primary rounded-pill mt-2">Adornos</button>
-<button type="button" class="btn btn-primary rounded-pill mt-2">Recuerdos</button>
+                                <span>Sugerencias: </span>
+                                <button type="button" class="btn btn-primary btn-sm mr-2" *ngFor="let tag of tags;" (click)="searchTag(tag.nombre)">{{tag.nombre}}</button>
                             </div>
-                            
+
                         </div>
-                        <div class="card-body">
+                        <div class="card-body mb-size">
                             <blockquote class="blockquote">
-                                <p class="mb-0">Aqui puedes encontrar </p>
+                                <p class="mb-0 search-text padding-left">Aqui apareceran los resultados de tu busqueda</p>
                             </blockquote>
+                            <div class="col-sm-6 col-md-6 col-lg-3 search-result" *ngFor="let search of searchs;">
+                                <div class="card">
+                                   <img src="../assets/images/banners/{{search.img1}}.jpg" class="card-img-top" alt="#">
+                                   <div class="card-body">
+                                      <p class="margin-tk-bottom"><b>{{search.nombre}}</b></p>
+                                      <p class="card-text">{{search.slogan}}</p>
+                                      <a href="/#/perfil/{{search.url}}" target="_blank" class="btn btn-primary text-tk-white">Ver mas</a>
+                                   </div>
+                                </div>
+                             </div>
                         </div>
                     </div>
                 </div>
@@ -69,7 +68,8 @@
                             <span>Quieres tener un mayor alcance en tu negocio?.</span><br>
                             <span>Has llegado al lugar indicado.</span><br>
                             <span>Anunciate con nosotros.</span><br>
-                            <span>Ten un lugar en internet accecible desde cualquier dispositivo pc, tablet,
+                            <span>Ten un lugar en internet accesible
+                                desde cualquier dispositivo pc, tablet,
                                 smartphone.</span>
                             <ul class="list-inline p-0 m-0">
                                 <li class="mb-2">

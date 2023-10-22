@@ -39,7 +39,16 @@ export class ProfileService{
 
 		return this._http.get(this.url+'videos/'+id, {headers: headers});
 	}
+	getTags(): Observable<any>{
+		let headers = new HttpHeaders().set('Content-Type','application/json');
 
+		return this._http.get(this.url+'tags', {headers: headers});
+	}
+	getSearch(data: number): Observable<any>{
+		let headers = new HttpHeaders().set('Content-Type', 'application/json');
+
+		return this._http.get(this.url+'search/'+data, {headers: headers});
+	}
 	// getProjects(): Observable<any>{
 	// 	let headers = new HttpHeaders().set('Content-Type', 'application/json');
 
