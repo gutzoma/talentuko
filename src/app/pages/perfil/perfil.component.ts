@@ -78,6 +78,8 @@ getPlataformas(params: any) {
     response => {
       if(response != 'No existen'){
         this.plataformas = response;
+      }else{
+        this.plataformas = '';
       }
     },
     error => {

@@ -63,13 +63,14 @@ iframe {
     .margin-tk-bottom{
         margin-bottom: 0;
     }
-}
-
-.carousel-control-prev,
+    .carousel-control-prev,
 .carousel-control-next {
     width: 10% !important;
     height: 170px;
 }
+}
+
+
 
 .logo-footer {
     width: 25px;
