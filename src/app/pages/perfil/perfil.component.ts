@@ -40,6 +40,11 @@ getGenerales(params: any) {
         $('body').addClass(this.generales.tema);
         $('.acerca-de').html(this.generales.acerca_de);
         $('.info').html(this.generales.info);
+        setTimeout(() => {
+          $('#loading').addClass('disp-n');
+          $("html").scrollTop(0);
+          $('.carousel-inner .carousel-item:first-child').addClass('active');
+        }, 1500);
       }else{
         window.location.href = "/#/home";
       }
@@ -95,7 +100,6 @@ getVideos(params: any) {
         this.videos = response;
         setTimeout(() => {
           $(".video1").attr("src", "https://www.youtube.com/embed/" + this.videos[0].url);
-          $(".video1").addClass('active');
           $(".video2").attr("src", "https://www.youtube.com/embed/" + this.videos[1].url);
           $(".video3").attr("src", "https://www.youtube.com/embed/" + this.videos[2].url);
         }, 1500);

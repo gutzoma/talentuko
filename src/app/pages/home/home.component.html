@@ -39,16 +39,18 @@
                             <blockquote class="blockquote">
                                 <p class="mb-0 search-text padding-left">Aqui apareceran los resultados de tu busqueda</p>
                             </blockquote>
-                            <div class="col-sm-6 col-md-6 col-lg-3 search-result" *ngFor="let search of searchs;">
-                                <div class="card">
-                                   <img src="../assets/images/banners/{{search.img1}}.jpg" class="card-img-top" alt="#">
-                                   <div class="card-body">
-                                      <p class="margin-tk-bottom"><b>{{search.nombre}}</b></p>
-                                      <p class="card-text">{{search.slogan}}</p>
-                                      <a href="/#/perfil/{{search.url}}" target="_blank" class="btn btn-primary text-tk-white">Ver mas</a>
-                                   </div>
-                                </div>
-                             </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-4 search-result" *ngFor="let search of searchs;">
+                                    <div class="card">
+                                       <img src="../assets/images/banners/{{search.img1}}.jpg" class="card-img-top" alt="#">
+                                       <div class="card-body">
+                                          <p class="margin-tk-bottom"><b>{{search.nombre}}</b></p>
+                                          <p class="card-text">{{search.slogan}}</p>
+                                          <a href="/#/perfil/{{search.url}}" target="_blank" class="btn btn-primary text-tk-white">Mas Info...</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -82,3 +82,7 @@ iframe {
 .text-tk-white {
     color: white !important;
 }
+
+.card-img-top{
+    max-height: 150px;
+}
